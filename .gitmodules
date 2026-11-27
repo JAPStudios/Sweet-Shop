@@ -1,0 +1,31 @@
+[submodule "upstream/amazon-archives/serverless-retail-workshop"]
+	path = upstream/amazon-archives/serverless-retail-workshop
+	url = https://github.com/amazon-archives/serverless-retail-workshop.git
+
+[submodule "upstream/amazon-archives/swa-sample-seller"]
+	path = upstream/amazon-archives/swa-sample-seller
+	url = https://github.com/amazon-archives/swa-sample-seller.git
+
+[submodule "upstream/amazon-archives/aws-service-catalog-react-components"]
+	path = upstream/amazon-archives/aws-service-catalog-react-components
+	url = https://github.com/amazon-archives/aws-service-catalog-react-components.git
+
+[submodule "upstream/AuroraOSS/AuroraStore"]
+	path = upstream/AuroraOSS/AuroraStore
+	url = https://github.com/AuroraOSS/AuroraStore.git
+
+[submodule "upstream/f-droid/repomaker"]
+	path = upstream/f-droid/repomaker
+	url = https://github.com/f-droid/repomaker.git
+
+[submodule "upstream/f-droid/fdroidserver"]
+	path = upstream/f-droid/fdroidserver
+	url = https://github.com/f-droid/fdroidserver.git
+
+[submodule "upstream/hellofresh/braintree-go"]
+	path = upstream/hellofresh/braintree-go
+	url = https://github.com/hellofresh/braintree-go.git
+
+[submodule "upstream/M-China/mcd-mcp-server"]
+	path = upstream/M-China/mcd-mcp-server
+	url = https://github.com/M-China/mcd-mcp-server.git
