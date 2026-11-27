@@ -1,0 +1,100 @@
+{
+  "name": "Shipment",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "string"
+    },
+    "order_reference": {
+      "type": "string"
+    },
+    "seller_id": {
+      "type": "string"
+    },
+    "seller_name": {
+      "type": "string"
+    },
+    "item_summary": {
+      "type": "string"
+    },
+    "item_count": {
+      "type": "number"
+    },
+    "delivery_fee_cents": {
+      "type": "number"
+    },
+    "pickup_code": {
+      "type": "string"
+    },
+    "pickup_location_key": {
+      "type": "string"
+    },
+    "pickup_address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "placed",
+        "packing",
+        "ready_for_pickup",
+        "collected",
+        "delivered"
+      ],
+      "enumColors": [
+        "gray",
+        "yellow",
+        "blue",
+        "purple",
+        "green"
+      ],
+      "default": "placed"
+    },
+    "packed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "delivered_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "order_id",
+    "seller_id",
+    "seller_name"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "data.seller_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
