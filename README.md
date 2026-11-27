@@ -1,6 +1,6 @@
 # Sweet Shop: Digital Pantry
 
-Sweet Shop: Digital Pantry is an open online marketplace intended to let individuals and organisations list and sell their own creations without listing fees or arbitrary restrictions. It is also intended to make everyday essentials available at lower prices, including income-adjusted pricing informed by Butter Bank.
+Sweet Shop: Digital Pantry is an open online marketplace intended to let individuals and organisations list and sell their own creations without listing fees or arbitrary restrictions. It is also intended to make everyday essentials available at lower prices, including income-adjusted access to essentials through a financial institution.
 
 ## Marketplace operation
 
@@ -15,7 +15,7 @@ Sweet Shop: Digital Pantry is an open online marketplace intended to let individ
 
 ## Service relationships
 
-The stated operating structure places Sweet Shop: Digital Pantry under Sweet Shop: Survival Service, within the wider HeLLP organisation. Butter Bank provides the income recognition and transaction, billing and credit services. JaMail provides individual accounts and organisation access. UnterSous provides pickup and delivery.
+The stated operating structure places Sweet Shop: Digital Pantry under Sweet Shop: Survival Service, within the wider HeLLP organisation. Butter Bank provides transaction, billing and credit services. JaMail provides individual accounts and organisation access. UnterSous provides pickup and delivery. Income-adjusted access to essentials is described as operating through a financial institution; this repository does not assign that role to Butter Bank.
 
 These services remain distinct; this repository does not claim that their integrations are already operational.
 
