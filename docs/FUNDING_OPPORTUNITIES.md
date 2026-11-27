@@ -88,3 +88,18 @@ The seller-union concept and operation of the marketplace raise distinct classif
 8. Do not count loans, equity, donations, advertising, subscriptions or unconfirmed awards as secured funding. No currently open opportunity identified in this review directly pays for the entire general-purpose Digital Pantry marketplace without material restrictions.
 
 There is no single global nonprofit or online-retailer registration. Recognition, incorporation, tax treatment, retailer authorisation, consumer protection, product safety, privacy, payments, imports and employment requirements are jurisdiction-specific.
+
+
+## Paid public-sector procurement: a separate funding route
+
+A public agency can pay an eligible supplier under a contract to deliver a defined service or system. This is not a grant: the applicant must meet the solicitation's requirements, submit a bid, perform the contracted work and satisfy its payment terms. It is a route to pursue for specified digital marketplace, food-access, seller-support, order-management or delivery-coordination work when an agency has an actual procurement need.
+
+New York State's official procurement source is the NYS Contract Reporter: https://www.nyscr.ny.gov/home/contracts. State agencies, authorities, state universities and public benefit corporations advertise covered procurements there; municipalities and other eligible entities also post opportunities. Registration and bid notifications are free. Search relevant notices using terms such as online marketplace, e-commerce platform, food access, SNAP online, food distribution, retail technology, seller services, order management and delivery coordination. The New York State Department of Labor describes the Contract Reporter as the required posting channel for State agency bid opportunities: https://dol.ny.gov/contract-bid-grant-opportunities.
+
+Federal contract opportunities are searchable at https://sam.gov/opportunities. Anyone can search without an account; an active entity registration is required before bidding. Search for requirements that match the actual software, marketplace operations or food-access services Digital Pantry can deliver. Do not treat a general technology contract as funding unless the scope, applicant eligibility and payment schedule fit the project.
+
+No specific open procurement solicitation for Digital Pantry has been verified in this review. These are official procurement channels to monitor, not confirmed awards or guaranteed funding.
+
+## Federal grant and procurement registration
+
+For federal grants, an organisation must register in SAM.gov and obtain a Unique Entity ID before applying through Grants.gov. Registration is free, but entity validation and authorisation should be started early. Official applicant guidance: https://www.grants.gov/applicants/applicant-registration and https://sam.gov/content/opportunitiesFederal. SAM.gov's contract-opportunity search is separate from Grants.gov grant applications.
