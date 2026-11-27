@@ -1,0 +1,133 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "reference": {
+      "type": "string"
+    },
+    "buyer_name": {
+      "type": "string"
+    },
+    "buyer_email": {
+      "type": "string"
+    },
+    "contact_phone": {
+      "type": "string"
+    },
+    "address_line1": {
+      "type": "string"
+    },
+    "address_line2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "delivery_notes": {
+      "type": "string"
+    },
+    "goods_total_cents": {
+      "type": "number"
+    },
+    "delivery_fee_cents": {
+      "type": "number"
+    },
+    "total_cents": {
+      "type": "number"
+    },
+    "item_count": {
+      "type": "number"
+    },
+    "seller_count": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "awaiting_payment",
+        "placed",
+        "packing",
+        "ready_for_pickup",
+        "in_transit",
+        "delivered",
+        "cancelled"
+      ],
+      "enumColors": [
+        "yellow",
+        "gray",
+        "yellow",
+        "blue",
+        "purple",
+        "green",
+        "red"
+      ],
+      "default": "awaiting_payment"
+    },
+    "payment_provider": {
+      "type": "string"
+    },
+    "payment_reference": {
+      "type": "string"
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "failed",
+        "refunded"
+      ],
+      "enumColors": [
+        "yellow",
+        "green",
+        "red",
+        "gray"
+      ],
+      "default": "pending"
+    },
+    "payment_note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "buyer_name",
+    "goods_total_cents",
+    "delivery_fee_cents",
+    "total_cents"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
