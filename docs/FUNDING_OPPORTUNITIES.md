@@ -73,7 +73,7 @@ The seller-union concept and operation of the marketplace raise distinct classif
 
 ## Technology credits are not cash grants
 
-- AWS Nonprofit Credit Program: https://aws.amazon.com/government-education/nonprofits/nonprofit-credit-program/ . AWS lists specified tax-exempt categories; 501(c)(6) is not among the listed US categories. For US organisations, AWS directs applicants through TechSoup and partner NGOs. Credits reduce infrastructure costs but are not cash.
+- AWS Nonprofit Credit Program: https://aws.amazon.com/government-education/nonprofits/nonprofit-credit-program/ . AWS currently advertises up to $5,000 USD in promotional credits globally, distributed through TechSoup and partner NGOs. For US organisations, the listed eligible classifications are 501(c)(1), (3), (8), (9), (11), (12), (14) and (15); 501(c)(6) is not on that list. International applicants must verify eligibility through TechSoup Global. Credits can offset eligible AWS hosting, compute, storage and database costs; they are not cash and cannot be counted as EDA FY2027 Build to Scale match because that competition explicitly excludes cloud service credits.
 - GitHub for Nonprofits: https://github.com/solutions/industry/nonprofits . The programme is limited to verified 501(c)(3) or equivalent organisations meeting GitHub's stated conditions. It provides discounted or free GitHub services, not cash. Eligibility must be checked against the actual applicant's status.
 
 ## How to pursue funding
@@ -98,7 +98,7 @@ New York State's official procurement source is the NYS Contract Reporter: https
 
 Federal contract opportunities are searchable at https://sam.gov/opportunities. Anyone can search without an account; an active entity registration is required before bidding. Search for requirements that match the actual software, marketplace operations or food-access services Digital Pantry can deliver. Do not treat a general technology contract as funding unless the scope, applicant eligibility and payment schedule fit the project.
 
-No specific open procurement solicitation for Digital Pantry has been verified in this review. These are official procurement channels to monitor, not confirmed awards or guaranteed funding.
+One currently listed food-sector procurement lead is CR# 2139415, “Food Products and Distribution for School Food Authorities with Related Supplies and Services,” posted by Sourcewell and listed with a December 3, 2026 due date. Official listing: https://www.nyscr.ny.gov/Ads/Details/2139415. This is a food-products/distribution procurement, not a grant or a general software-development contract. Its scope, vendor qualifications, geographic coverage and submission requirements must be checked in the bid documents before deciding whether Digital Pantry or any participating seller can bid. The listing alone does not establish eligibility or an award. No open procurement specifically for development of the general-purpose Digital Pantry marketplace has been verified.
 
 ## Federal grant and procurement registration
 
