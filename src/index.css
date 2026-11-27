@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Sweet Shop pastel — cream paper, berry ink, mint & lavender sugars */
+    --background: 38 100% 97%;
+    --foreground: 330 22% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 330 22% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 22% 17%;
+    --primary: 332 34% 40%;
+    --primary-foreground: 38 100% 97%;
+    --secondary: 154 42% 92%;
+    --secondary-foreground: 162 30% 20%;
+    --muted: 34 46% 94%;
+    --muted-foreground: 330 12% 42%;
+    --accent: 276 46% 94%;
+    --accent-foreground: 276 34% 30%;
+    --destructive: 352 62% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 32 34% 89%;
+    --input: 32 34% 87%;
+    --ring: 332 40% 62%;
+    --chart-1: 332 48% 66%;
+    --chart-2: 154 40% 60%;
+    --chart-3: 42 78% 68%;
+    --chart-4: 276 44% 72%;
+    --chart-5: 18 70% 70%;
+    --radius: 1rem;
+    --font-heading: "Fraunces", ui-serif, Georgia, serif;
+    --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Fraunces", ui-serif, Georgia, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --sidebar-background: 38 60% 96%;
+    --sidebar-foreground: 330 22% 22%;
+    --sidebar-primary: 332 34% 40%;
+    --sidebar-primary-foreground: 38 100% 97%;
+    --sidebar-accent: 276 46% 94%;
+    --sidebar-accent-foreground: 276 34% 30%;
+    --sidebar-border: 32 34% 89%;
+    --sidebar-ring: 332 40% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background-image:
+      radial-gradient(58rem 32rem at 8% -8%, hsl(154 60% 90% / 0.65), transparent 62%),
+      radial-gradient(48rem 28rem at 96% 4%, hsl(276 70% 92% / 0.6), transparent 60%),
+      radial-gradient(42rem 26rem at 50% 104%, hsl(38 96% 88% / 0.55), transparent 64%);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+    font-variation-settings: "SOFT" 40, "WONK" 1;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background: hsl(332 70% 88%);
+    color: hsl(330 22% 17%);
+  }
+}
+
+@layer components {
+  .sweet-card {
+    @apply rounded-[1.5rem] border border-white/70 bg-card/90 backdrop-blur-sm;
+    box-shadow: 0 22px 48px -34px hsl(330 34% 34% / 0.45);
+  }
+
+  .sugar-shadow {
+    box-shadow: 0 26px 60px -38px hsl(330 36% 32% / 0.5);
+  }
+
+  .eyebrow {
+    @apply text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-primary/80;
+  }
+
+  .pastel-rule {
+    background: linear-gradient(
+      90deg,
+      hsl(332 70% 88%),
+      hsl(38 92% 84%),
+      hsl(154 52% 84%),
+      hsl(276 58% 88%)
+    );
+  }
+}
