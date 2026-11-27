@@ -2,7 +2,7 @@
 
 Research date: 2026-11-26
 
-Sweet Shop: Digital Pantry is an open online marketplace for individuals and organisations, with income-adjusted access to life essentials according to income recognised by Butter Bank, another public service. The marketplace brief also specifies product verification before publication, seller-union membership, JaMail organisation accounts and intended pickup/delivery through UnterSous. These are separate services with distinct stated roles; this description does not claim that their technical integrations are already operational.
+Sweet Shop: Digital Pantry is an open online marketplace intended for individuals and organisations to sell their own creations independently without listing fees or arbitrary restrictions. It is also intended to provide lower-cost or free access to life essentials based on income recognised by Butter Bank, another public service. The marketplace brief specifies product verification before publication, seller-union membership, JaMail organisation accounts and intended pickup/delivery through UnterSous. These are separate services with distinct stated roles; this description does not claim that their technical integrations are already operational.
 
 The stated relationship is that HeLLP owns Sweet Shop: Survival Service, and Sweet Shop: Digital Pantry is under Sweet Shop: Survival Service. Those names and relationships must not be collapsed into one name or treated as proof that any particular name is the registered legal applicant. Sweet Shop: Digital Pantry is the project being funded. The grant applicant must be identified from the relevant registration and organisational records, using the exact legal name and evidence required by the funding programme.
 
@@ -28,8 +28,8 @@ Official programme: https://www.eda.gov/funding/funding-opportunities/fiscal-yea
 
 - Open; deadline February 26, 2027 at 4:59 p.m. Eastern.
 - Emerging Path: up to $1 million over 36 months. Growth Path: up to $7 million over 48 months.
-- The programme is for regional innovation and technology-commercialisation ecosystems, with focus on specified critical technology areas including machine learning, semiconductors, quantum, robotics, biotechnology, cybersecurity, advanced energy and advanced materials.
-- A nonprofit applicant must have support from a state or political subdivision. EDA says this support must be evidenced by a resolution or a letter signed by an appropriate state or local official or legislator.
+- The programme supports regional innovation and technology-commercialisation ecosystems, with focus on specified critical technology areas including machine learning, semiconductors, quantum, robotics, biotechnology, cybersecurity, advanced energy and advanced materials.
+- A nonprofit applicant must have support from a state or political subdivision. EDA's current FAQ describes evidence such as a resolution or letter signed by an appropriate state or local official or legislator.
 - A nonprofit does not have to be a 501(c)(3), but must provide evidence of nonprofit status, including at minimum articles of incorporation, a certificate of good standing and bylaws.
 - A 50% matching share is mandatory: each federal dollar must be matched by at least one dollar. Matching contributions must be committed, available, unencumbered and unrestricted at the required time. Eligible documented in-kind contributions may count; the match cannot be waived.
 - An active SAM.gov registration is required before submission. Applications are submitted through EDA's EDGE system.
@@ -60,6 +60,27 @@ Official New York programme page: https://www.rd.usda.gov/programs-services/busi
 
 Fit: potentially relevant to a genuine rural seller-cooperative development programme. It is not a direct grant for the marketplace software or a substitute for deciding the seller union's actual legal and operating arrangements.
 
+## SNAP online retailer authorisation: relevant to eligible food sales, not a development grant
+
+Official online retailer requirements: https://www.fns.usda.gov/snap/retailer/online/requirements
+
+- SNAP retailer authorisation is free, but it is not a source of development funding.
+- A retailer must first be eligible and authorised to accept SNAP. Additional Food and Nutrition Administration authorisation is required for online purchasing.
+- An online-only retailer must submit a letter of intent to SNAPOnline@usda.gov and follow the separate internet-retailer application process.
+- The online storefront must support secure EBT PIN entry through a technically approved third-party processor, eligible-food restrictions, refunds, split tender and other required controls.
+- End-to-end production testing with FNA and the relevant state agency is required before launch.
+- SNAP applies only to eligible food purchases, not every category of life essentials or general marketplace goods.
+
+This is a later operational pathway for eligible food sales. It should not be represented as a simple universal retailer registration or as funding for the marketplace.
+
+## 501(c)(6) classification: do not assume it fits the marketplace activity
+
+IRS guidance: https://www.irs.gov/charities-non-profits/other-non-profits/business-leagues
+
+A 501(c)(6) business league is generally an association organised to promote the common business interests of a line of business. Its activities must improve business conditions rather than primarily provide particular services to individual persons. The IRS states that an organisation primarily engaging in a regular business ordinarily carried on for profit does not qualify, even if the activity is cooperative or only self-sustaining.
+
+The seller-union concept may warrant separate analysis as a possible association activity. Operating the marketplace itself as a regular retail or marketplace business raises a distinct classification question. The 501(c)(6) label must not be assumed to authorise or exempt the marketplace's operating activity. The actual applicant's purposes, governance, member support, revenue model and activities must be assessed before choosing a tax classification.
+
 ## Technology credits, not cash
 
 ### AWS Nonprofit Credit Program
@@ -88,6 +109,8 @@ GitHub's current programme is limited to verified 501(c)(3) or equivalent organi
 2. For the Agriculture Innovation Center opportunity, define only the agricultural-producer services that Digital Pantry would actually provide, document the producers and eligible service area, and establish the required one-third match before submitting.
 3. In parallel, contact New York USDA Rural Development about the next Rural Business Development Grant cycle and whether a rural seller-support programme would qualify.
 4. Pursue EDA Build to Scale only if a specific critical-technology scope, public-sector support and committed 50% matching share can be evidenced.
-5. Treat AWS and GitHub benefits as reductions in infrastructure/development costs, not as cash funding.
+5. Treat SNAP as a separate retailer-authorisation process for eligible food purchases, not as a funding source.
+6. Assess the seller-union purpose separately from marketplace operations before relying on 501(c)(6) status.
+7. Treat AWS and GitHub benefits as reductions in infrastructure/development costs, not as cash funding.
 
 No currently open programme identified in this review directly funds the entire general-purpose Digital Pantry marketplace, its general operating costs or all product categories without material restrictions.
