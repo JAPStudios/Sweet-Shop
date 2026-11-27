@@ -103,3 +103,41 @@ One currently listed food-sector procurement lead is CR# 2139415, “Food Produc
 ## Federal grant and procurement registration
 
 For federal grants, an organisation must register in SAM.gov and obtain a Unique Entity ID before applying through Grants.gov. Registration is free, but entity validation and authorisation should be started early. Official applicant guidance: https://www.grants.gov/applicants/applicant-registration and https://sam.gov/content/opportunitiesFederal. SAM.gov's contract-opportunity search is separate from Grants.gov grant applications.
+
+
+## Newly checked opportunities open on November 26, 2026
+
+### Sky High Farm 2027 Grants — immediate food-justice lead
+
+Official page: https://www.skyhighfarm.org/grants
+
+The 2027 application is open November 1 through December 20, 2026. Sky High Farm says it will award $400,000 in total; its 2026 awards averaged approximately $11,000, with awards ranging from $1,500 to $30,000. Individuals and organisations working in agriculture, food justice or land sovereignty may apply. A 501(c)(3) designation is not required. The funder prioritises certain historically marginalised applicants and communities; no applicant identity or priority status should be assumed.
+
+Potential fit: a tightly scoped food-access project within Digital Pantry, such as connecting food producers and buyers or improving access to affordable staple foods. This is not an unrestricted technology-development grant, and the full marketplace across all product categories should not be presented as a food-justice project unless the proposed activities genuinely serve that purpose. Review the form's own requirements and select a realistic project budget. The funder expressly encourages applicants to submit without generative AI and says it assesses the work and community connection rather than writing quality; the applicant should therefore write the application in their own words. The page describes an emergency round capped at $2,000 and a main grant round; only one cycle may be selected.
+
+### Nasdaq Foundation Economic Opportunity Grant — 2027 cycle, conditional on 501(c)(3)
+
+Official page and guidelines: https://www.nasdaq.com/nasdaq-foundation/grant-program
+
+Expressions of Interest are due January 29, 2027 and July 30, 2027. The programme supports regional revitalisation and rural wealth building, access to capital, employee and community ownership, financial literacy and investor identity. It accepts requests only from IRS 501(c)(3) tax-exempt organisations, or a for-profit business acting on behalf of a qualified tax-exempt entity or through a fiscal sponsor. Because this project excludes fiscal sponsorship, this route is available only if the actual applicant is itself an eligible 501(c)(3). A 501(c)(6), an unclassified not-for-profit or a service/project name alone does not meet the stated eligibility rule. Requests are capped at 20% of the applicant's most recently completed annual operating budget; the programme excludes general operating support and capital projects. A seller-union or community-ownership component may be relevant, but only if the legal applicant and project meet the guidelines.
+
+### NYSDEC Food Recovery Initiatives Grant — open, but not general marketplace funding
+
+Official page: https://dec.ny.gov/environmental-protection/recycling-composting/organic-materials-management/funding-opportunities-for-organics-management
+
+Applications are accepted on a rolling basis from November 2, 2026 through November 2, 2028, unless the programme is withdrawn or funds are exhausted. Approximately $2 million is available. Eligible applicants are municipalities and 501(c)(3) not-for-profits. The project must increase the amount of food made available to people in need; eligible costs include equipment and staff costs related to food recovery. This is potentially relevant only if the applicant is an eligible 501(c)(3) or municipality and Digital Pantry is part of a genuine food-recovery programme. It does not fund general marketplace software development merely because the marketplace sells essentials.
+
+### NYSDEC Wasted Food Reduction and Food Scraps Recycling Initiatives Grant — open, but separate environmental scope
+
+Official page: https://dec.ny.gov/environmental-protection/recycling-composting/organic-materials-management/funding-opportunities-for-organics-management
+
+This separate programme also accepts rolling applications from November 2, 2026 through November 2, 2028, subject to withdrawal or exhaustion of funds, with approximately $4 million available. Eligible applicants are municipalities and 501(c)(3) not-for-profits. It funds projects reducing wasted food or increasing food-scrap recycling, including qualifying education, collection and recycling programmes. It is not a marketplace-development grant. Consider it only if a distinct, measurable food-waste reduction programme is genuinely part of the project and the applicant meets the legal requirements.
+
+## Immediate funding priorities
+
+1. Assess the Sky High Farm 2027 grant before December 20, 2026, but only for a clearly defined food-justice project and with the application written by the applicant in their own words.
+2. Determine whether the actual applicant is a registered 501(c)(3). If not, do not spend time on the Nasdaq Foundation or NYSDEC's two 501(c)(3)-restricted programmes.
+3. Keep EDA Build to Scale as a separate, high-value but conditional route: it requires a real critical-technology commercialisation programme, qualifying state or local support, SAM.gov registration and a committed 1:1 match.
+4. Continue monitoring future HFFI and USDA food/rural cycles for projects that meet their precise food-retail, supply-chain or rural-development criteria.
+
+These opportunities do not establish that funding has been awarded or that the applicant is eligible. No award is secured until the funder issues an award and the required agreement is completed.
