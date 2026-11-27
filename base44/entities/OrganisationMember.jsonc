@@ -1,0 +1,97 @@
+{
+  "name": "OrganisationMember",
+  "type": "object",
+  "properties": {
+    "organisation_id": {
+      "type": "string"
+    },
+    "organisation_name": {
+      "type": "string"
+    },
+    "worker_email": {
+      "type": "string",
+      "description": "Email of the individual worker account. Each worker keeps their own account; the membership links it to the organisation."
+    },
+    "worker_name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "owner",
+        "worker"
+      ],
+      "enumColors": [
+        "purple",
+        "gray"
+      ],
+      "default": "worker"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "revoked"
+      ],
+      "enumColors": [
+        "green",
+        "red"
+      ],
+      "default": "active",
+      "description": "Revoking a membership ends the worker's ability to list or edit on behalf of the organisation."
+    },
+    "jamail_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether JaMail confirmed this worker's employment. Stays false while the JaMail connection is not configured."
+    },
+    "revoked_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "revoked_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "organisation_id",
+    "worker_email"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "data.worker_email": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

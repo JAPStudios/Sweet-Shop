@@ -1,0 +1,49 @@
+{
+  "name": "DeliverySettings",
+  "type": "object",
+  "properties": {
+    "base_fee_cents": {
+      "type": "number",
+      "description": "Configured delivery fee for the first distinct pickup location."
+    },
+    "additional_pickup_fee_cents": {
+      "type": "number",
+      "description": "Configured fee for each additional distinct pickup location."
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "base_fee_cents",
+    "additional_pickup_fee_cents",
+    "enabled"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Listing name shown on the shelf"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "description": "Seller-defined product category; Digital Pantry does not restrict sellers to a fixed category list."
+    },
+    "price_cents": {
+      "type": "number",
+      "description": "Seller's listed price in cents"
+    },
+    "compare_at_price_cents": {
+      "type": "number"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "seller_id": {
+      "type": "string",
+      "description": "User id of the selling account"
+    },
+    "seller_name": {
+      "type": "string"
+    },
+    "organisation_id": {
+      "type": "string",
+      "description": "Organisation account the listing is published on behalf of, when an employee lists for their employer."
+    },
+    "organisation_name": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pending",
+        "verified",
+        "rejected"
+      ],
+      "enumColors": [
+        "gray",
+        "yellow",
+        "green",
+        "red"
+      ]
+    },
+    "verification_notes": {
+      "type": "string",
+      "rls": {
+        "read": {
+          "$or": [
+            {
+              "created_by_id": "{{user.id}}"
+            },
+            {
+              "user_condition": {
+                "role": "admin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "string",
+      "description": "Where the goods come from and how they are made"
+    },
+    "maker_type": {
+      "type": "string",
+      "enum": [
+        "self",
+        "incarcerated_artisan",
+        "organisation"
+      ],
+      "enumColors": [
+        "gray",
+        "purple",
+        "green"
+      ]
+    },
+    "maker_name": {
+      "type": "string"
+    },
+    "maker_compensation_cents": {
+      "type": "number",
+      "description": "Intended compensation rate for the maker per item; recording a rate does not mean a payment has been made."
+    },
+    "is_on_demand": {
+      "type": "boolean"
+    },
+    "lead_time_days": {
+      "type": "number"
+    },
+    "stock": {
+      "type": "number"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "native",
+        "imported"
+      ],
+      "enumColors": [
+        "gray",
+        "blue"
+      ]
+    },
+    "test_completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Reviewer confirms the item was physically or functionally tested.",
+      "rls": {
+        "read": {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      }
+    },
+    "legitimacy_confirmed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Reviewer confirms the listing and product legitimacy.",
+      "rls": {
+        "read": {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      }
+    },
+    "test_notes": {
+      "type": "string",
+      "description": "Reviewer evidence describing the test and legitimacy checks.",
+      "rls": {
+        "read": {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      }
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date-time",
+      "rls": {
+        "read": {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      }
+    },
+    "verified_by": {
+      "type": "string",
+      "rls": {
+        "read": {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "title",
+    "price_cents",
+    "seller_name"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "data.verification_status": "verified"
+        },
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    }
+  }
+}

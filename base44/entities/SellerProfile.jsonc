@@ -1,0 +1,104 @@
+{
+  "name": "SellerProfile",
+  "type": "object",
+  "properties": {
+    "shop_name": {
+      "type": "string"
+    },
+    "contact_address": {
+      "type": "string",
+      "description": "Private shop contact address; not displayed on public shop or product pages."
+    },
+    "bio": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "maker_type": {
+      "type": "string",
+      "enum": [
+        "self",
+        "incarcerated_artisan",
+        "organisation"
+      ],
+      "enumColors": [
+        "gray",
+        "purple",
+        "green"
+      ]
+    },
+    "union_member": {
+      "type": "boolean"
+    },
+    "pickup_address_line1": {
+      "type": "string"
+    },
+    "pickup_address_line2": {
+      "type": "string"
+    },
+    "pickup_city": {
+      "type": "string"
+    },
+    "pickup_region": {
+      "type": "string"
+    },
+    "pickup_postcode": {
+      "type": "string"
+    },
+    "pickup_country": {
+      "type": "string"
+    },
+    "pickup_location_key": {
+      "type": "string",
+      "description": "Private normalized key used only for pickup consolidation."
+    }
+  },
+  "required": [
+    "shop_name"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "delete": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    }
+  }
+}
