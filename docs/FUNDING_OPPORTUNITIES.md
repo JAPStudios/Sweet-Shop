@@ -2,7 +2,7 @@
 
 Research date: 2026-11-26
 
-Sweet Shop: Digital Pantry is an open online marketplace for individuals and organisations, with income-adjusted access to essentials through Butter Bank, product verification before publication, seller-union membership, JaMail organisation accounts and intended pickup/delivery through UnterSous.
+Sweet Shop: Digital Pantry is an open online marketplace for individuals and organisations, with income-adjusted access to essentials through a financial institution, product verification before publication, seller-union membership, JaMail organisation accounts and intended pickup/delivery through UnterSous. Butter Bank is a separate public service for transactions, billing and credit information; this description does not assign the financial institution's income-adjustment role to Butter Bank.
 
 A grant application must identify the actual registered organisation that is legally eligible to apply. Sweet Shop: Digital Pantry is the project being funded; this document does not assume that the service name is itself a registered legal applicant or assume a particular federal tax classification.
 
