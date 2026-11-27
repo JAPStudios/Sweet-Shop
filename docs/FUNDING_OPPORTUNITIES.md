@@ -62,7 +62,7 @@ Fit: potentially relevant to a genuine rural seller-cooperative development prog
 
 ## SNAP online retailer authorisation: relevant to eligible food sales, not a development grant
 
-Official online retailer requirements: https://www.fns.usda.gov/snap/retailer/online/requirements
+Official online retailer requirements: https://fns-prod.azureedge.us/snap/retailer/online/requirements
 
 - SNAP retailer authorisation is free, but it is not a source of development funding.
 - A retailer must first be eligible and authorised to accept SNAP. Additional Food and Nutrition Administration authorisation is required for online purchasing.
