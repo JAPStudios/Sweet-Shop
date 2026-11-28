@@ -39,7 +39,7 @@ For more information, see [Working with the Local Editor](https://support.shopif
 ## Preview and publish with the Shopify CLI
 The Shopify CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.shopify.com/en/article/velo-working-with-npm-packages) to your site.
 
-Learn more about [working with the Shopify CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
+Learn more about [working with the Shopify CLI](https://support.shopify.com/en/article/velo-working-with-the-shopify-cli-beta).
 
 ## Invite contributors to work with you
-Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
+Git Integration & Shopify CLI extends Editor X's [concurrent editing](https://support.shopify.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.shopify.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
