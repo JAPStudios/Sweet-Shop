@@ -1,44 +1,45 @@
-# Sweet Shop: Digital Pantry
+# Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
 
-Sweet Shop: Digital Pantry is a marketplace for essential goods and other seller-listed products. Sellers submit listings as private drafts. A listing becomes public only after an authorised reviewer confirms legitimacy, completes testing and records the evidence. Every Digital Pantry user is a union member.
+This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 
 
-Sweet Shop: Digital Pantry operates under Sweet Shop: Survival Service, which is owned by the not-for-profit organisation HeLLP.
+Connect your site to GitHub, develop in your favorite IDE, test your code in real time, and publish your site from the command line.
 
-## Current application workflows
+## Set up this repository in your IDE
+This repo is connected to a Wix site. That site tracks this repo's default branch. Any code committed and pushed to that branch from your local IDE appears on the site.
 
-- Public catalogue and product detail pages show verified listings only.
-- Sellers create a shop profile with a private pickup address, submit listings and import CSV exports by file upload or paste, using normalized fields or common Shopify, Etsy, Wix and Squarespace product headers. Digital Pantry charges no listing fee.
-- Product categories are seller-defined. Browse filters include categories present in verified listings alongside suggested categories.
-- Listings require a description, price and either available stock or a stated made-to-order lead time. Provenance details are optional. Incarcerated-artisan listings require a positive compensation rate.
-- Reviewers must record testing and legitimacy checks before approval. Sellers cannot update verification fields or approve their own listings.
-- The basket stores selected products and quantities.
-- An administrator can configure a delivery rate schedule. Sellers with the same normalized pickup address count as one pickup location.
-- UnterSous is responsible for pickup and delivery. The Digital Pantry app is not yet connected to UnterSous.
-- Organisation accounts record a worker roster. Each worker keeps their own account and can list on the organisation's behalf only while their membership is active; revoking a membership removes that ability immediately. JaMail has not verified any identity or employment status, so organisation accounts stay pending.
-- The affordability page holds a buyer's income assessment. No assessment exists, so no adjustment is applied; any percentage would come only from a Butter Bank response.
-- The connections page (administrators) lists the credentials and API surface JaMail, Butter Bank and UnterSous each need.
-- The catalogue starts empty. No generated sample sellers, organisations, products or orders are included.
+Before getting started, make sure you have the following things installed:
+* [Git](https://git-scm.com/download)
+* [Node](https://nodejs.org/en/download/), version 14.8 or later.
+* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install)
+* An SSH key [added to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-## Not connected or configured
+To set up your local environment and start coding locally, do the following:
 
-- JaMail authentication and organisation verification. Organisation memberships and their revocation are recorded and enforced by this app, but JaMail does not confirm identity or employment, and no employment-end signal reaches the app automatically.
-- Butter Bank verification and income-sensitive pricing.
-- Direct API imports from external storefronts or content services; the current importer accepts CSV exports with common product headers or normalized fields.
-- Payment collection, seller payout routing and actual maker compensation payments.
-- Delivery rate amounts; an administrator must configure them.
+1. Open your terminal and navigate to where you want to store the repo.
+1. Clone the repo by running `git clone <your-repository-url>`.
+1. Navigate to the repo's directory by running `cd <directory-name>`.
+1. Install the repo's dependencies by running `npm install` or `yarn install`.
+1. Install the Wix CLI by running `npm install -g @wix/cli` or `yarn global add @wix/cli`.  
+   Once you've installed the CLI globally, you can use it with any Wix site's repo.
 
-Checkout is closed: Base44 currently reports that its Wix Payments connection is unavailable for this account or country. This is not evidence that Wix Payments is unsupported in the United States. Checkout creates no order, no shipment and no stock change until a payment can be confirmed. No default fees, income thresholds or discounts are invented. Maker compensation fields record an intended per-item rate, not proof that payment has been made.
+For more information, see [Setting up Git Integration & Wix CLI](https://support.wix.com/en/article/velo-setting-up-git-integration-wix-cli-beta).
 
-## Development
+## Write Velo code in your IDE
+Once your repo is set up, you can write code in it as you would in any other non-Wix project. The repo's file structure matches the [public](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#public), [backend](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend), and [page code](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#page-code) sections in Editor X.
 
-This is a Base44 TanStack Start application using React 19, file-based routes, server functions and Base44 entities.
+Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
 
-```bash
-npm install
-base44 login
-base44 link
-base44 dev
-npm run build
-```
+## Test your code with the Local Editor
+The Local Editor allows you test changes made to your site in real time. The code in your local IDE is synced with the Local Editor, so you can test your changes before committing them to your repo. You can also change the site design in the Local Editor and sync it with your IDE.
 
-Publish through the Base44 app editor after the remaining integrations, delivery rates and payment workflow have been configured and tested.
+Start the Local Editor by navigating to this repo's directory in your terminal and running `wix dev`.
+
+For more information, see [Working with the Local Editor](https://support.wix.com/en/article/velo-working-with-the-local-editor-beta).
+
+## Preview and publish with the Wix CLI
+The Wix CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.wix.com/en/article/velo-working-with-npm-packages) to your site.
+
+Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
+
+## Invite contributors to work with you
+Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
